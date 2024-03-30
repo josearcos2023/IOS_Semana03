@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="semana03_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-l5-cBs">
+                                <rect key="frame" x="20" y="99" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crear auto"/>
+                                <connections>
+                                    <action selector="onTapCreateCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X13-QQ-WXc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg5-kF-41s">
+                                <rect key="frame" x="20" y="154" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Acelerar"/>
+                                <connections>
+                                    <action selector="onTapAccelerate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75Q-aJ-76y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lN-wf-rfx">
+                                <rect key="frame" x="20" y="209" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Frenar"/>
+                                <connections>
+                                    <action selector="onTapBreak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSa-ja-Wgp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jE-jt-bTZ">
+                                <rect key="frame" x="20" y="264" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Mascota"/>
+                                <connections>
+                                    <action selector="onTapCreatePet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ymv-9p-lJK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGz-NY-hmZ">
+                                <rect key="frame" x="20" y="319" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Pasear"/>
+                                <connections>
+                                    <action selector="onTapWalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKz-ku-YxJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1R-h2-nQt">
+                                <rect key="frame" x="20" y="374" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Vacunas"/>
+                                <connections>
+                                    <action selector="onTapIsVaccinated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ecu-h9-a7Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x1R-h2-nQt" firstAttribute="top" secondItem="qGz-NY-hmZ" secondAttribute="bottom" constant="20" id="0sM-W7-y1t"/>
+                            <constraint firstItem="qGz-NY-hmZ" firstAttribute="top" secondItem="8jE-jt-bTZ" secondAttribute="bottom" constant="20" id="4JN-FN-0q7"/>
+                            <constraint firstItem="qGz-NY-hmZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Fd-9K-dz6"/>
+                            <constraint firstItem="mCa-l5-cBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="90D-VO-hCq"/>
+                            <constraint firstItem="1lN-wf-rfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ah2-DJ-6Dd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8jE-jt-bTZ" secondAttribute="trailing" constant="20" id="GBk-SJ-btH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mCa-l5-cBs" secondAttribute="trailing" constant="20" id="Gw7-iZ-l3i"/>
+                            <constraint firstItem="Dg5-kF-41s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hfq-jv-kI3"/>
+                            <constraint firstItem="8jE-jt-bTZ" firstAttribute="top" secondItem="1lN-wf-rfx" secondAttribute="bottom" constant="20" id="THu-3q-6f3"/>
+                            <constraint firstItem="1lN-wf-rfx" firstAttribute="top" secondItem="Dg5-kF-41s" secondAttribute="bottom" constant="20" id="WY5-bG-xpL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dg5-kF-41s" secondAttribute="trailing" constant="20" id="Xk3-lr-CYY"/>
+                            <constraint firstItem="8jE-jt-bTZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YzW-Af-abm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x1R-h2-nQt" secondAttribute="trailing" constant="20" id="aai-Pf-f2K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qGz-NY-hmZ" secondAttribute="trailing" constant="20" id="baS-Lf-JI4"/>
+                            <constraint firstItem="mCa-l5-cBs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="fOz-Ml-jFG"/>
+                            <constraint firstItem="x1R-h2-nQt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fv9-7V-U4U"/>
+                            <constraint firstItem="Dg5-kF-41s" firstAttribute="top" secondItem="mCa-l5-cBs" secondAttribute="bottom" constant="20" id="pWF-6m-tHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1lN-wf-rfx" secondAttribute="trailing" constant="20" id="tWP-MM-H2Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAcelerar" destination="Dg5-kF-41s" id="VKG-BZ-D35"/>
+                        <outlet property="btnCreateCar" destination="mCa-l5-cBs" id="AoR-KS-mfe"/>
+                        <outlet property="btnCreatePet" destination="8jE-jt-bTZ" id="Wdv-Zm-V4C"/>
+                        <outlet property="btnFrenar" destination="1lN-wf-rfx" id="qq3-LH-7AE"/>
+                        <outlet property="btnPasear" destination="qGz-NY-hmZ" id="Ho1-de-0dk"/>
+                        <outlet property="btnVacunado" destination="x1R-h2-nQt" id="LN9-Ii-Hor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672.51908396946567" y="-38.028169014084511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
